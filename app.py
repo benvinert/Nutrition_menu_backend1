@@ -1,9 +1,12 @@
 from flask import Flask, jsonify
+from flask_cors import CORS, cross_origin
 import requests
 import json
 
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route('/<food_id>')
