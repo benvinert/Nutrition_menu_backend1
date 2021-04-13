@@ -1,1 +1,1 @@
-web: gunicorn nutritionCalcApi.app
+web: gunicorn app:app
