@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 
 @app.route('/<food_id>')
+@cross_origin()
 def home(food_id):
     foodValues = requests.post(
         "https://www.goleango.com/calculators/nutrition_calculator/utils/get_hebrew_nutritional_value_for_food_id_json.php", data={'food_id': food_id})
