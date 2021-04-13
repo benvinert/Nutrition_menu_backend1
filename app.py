@@ -22,5 +22,4 @@ def home(food_id):
 
 
 if __name__ == "__main__":
-    print("he")
     app.run(debug=True)
